@@ -1,4 +1,3 @@
-// Todo: interfaces con la estructura de la respuesta dada por PokeAPI
 // * Generada con RapidAPI Client
 export interface ResponseAPI {
   abilities: Ability[];
