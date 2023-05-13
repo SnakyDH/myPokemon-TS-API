@@ -13,29 +13,29 @@ class Pokemon {
     this.types = types;
   }
   // Getters
-  public get ID(): number {
+  public get getID(): number {
     return this.id;
   }
-  public get Name(): string {
+  public get getName(): string {
     return this.name;
   }
-  public get Sprites(): Sprites {
+  public get getSprites(): Sprites {
     return this.sprites;
   }
-  public get Types(): string[] {
+  public get getTypes(): string[] {
     return this.types;
   }
-  public set ID(id: number) {
+  // Setters
+  public set setID(id: number) {
     this.id = id;
   }
-  // Setters
-  public set Name(name: string) {
+  public set setName(name: string) {
     this.name = name;
   }
-  public set Sprites(sprites: Sprites) {
+  public set setSprites(sprites: Sprites) {
     this.sprites = sprites;
   }
-  public set Types(types: string[]) {
+  public set setTypes(types: string[]) {
     this.types = types;
   }
 }
