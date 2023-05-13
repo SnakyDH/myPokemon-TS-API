@@ -24,7 +24,7 @@ const getMyPokemon = async (req: Request, res: Response) => {
       delete dataSprites.versions;
 
       const myPokemon = new Pokemon(dataId, dataName, dataSprites, myTypes);
-g      return res.status(200).json({ message: "OK", myPokemon: myPokemon });
+      return res.status(200).json({ message: "OK", myPokemon: myPokemon });
     } else if (response.status === 404) {
       return res.status(404).json({ message: "Not Found" });
     } else {
