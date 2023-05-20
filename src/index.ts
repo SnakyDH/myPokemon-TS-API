@@ -8,9 +8,8 @@ var corsOptions = {
   origin: "https://my-pokemon-ts-react.vercel.app/",
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
-app.use(cors(corsOptions));
 
-app.use("/api", pokeRouter);
+app.use("/api", cors(corsOptions), pokeRouter);
 
 app.listen(port, () =>
   console.log(`Express listening at http://localhost:${port}`)
